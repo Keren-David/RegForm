@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Registration Form</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2 style="text-align: center;">Registration Form</h2>
-  <form id="registrationForm">
-    <input type="text" id="name" placeholder="Name" required />
-    <input type="email" id="email" placeholder="Email" required />
-    <input type="password" id="password" placeholder="Password" required />
-    <input type="date" id="dob" required />
+  <h1>Registration Form</h1>
+  <form id="registration-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" required><br>
+
     <label>
-      <input type="checkbox" id="acceptTerms" required />
-      Accept Terms & Conditions
-    </label>
-    <div style="text-align: center;">
-      <button type="submit">Register</button>
-    </div>
+      <input type="checkbox" id="terms" required>
+      I accept the terms and conditions
+    </label><br>
+
+    <button type="submit">Submit</button>
   </form>
 
-  <table id="entriesTable">
+  <h2>Registered Users</h2>
+  <table id="user-table">
     <thead>
       <tr>
         <th>Name</th>
@@ -33,7 +40,7 @@
       </tr>
     </thead>
     <tbody>
-      <!-- entries will be appended here -->
+      <!-- User data will appear here -->
     </tbody>
   </table>
 
