@@ -1,44 +1,24 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px;
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="password"],
-form input[type="date"] {
-  width: 100%;
-  padding: 6px;
-  margin: 6px 0 12px 0;
-  box-sizing: border-box;
-  display: block;
+form {
+  margin-bottom: 20px;
 }
 
 label {
-  display: block;
+  display: inline-block;
+  width: 150px;
   margin-bottom: 10px;
 }
 
-button {
-  padding: 8px 15px;
-  font-size: 16px;
-  background-color: pink;
-  border: none;
-  cursor: pointer;
+input, button {
+  margin-bottom: 10px;
 }
 
-table {
-  width: 100%;
+table, th, td {
+  border: 1px solid black;
   border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th,
-td {
-  border: 1px solid #333;
   padding: 8px;
-  text-align: left;
 }
